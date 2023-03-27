@@ -1,0 +1,255 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-style: normal;
+    background: #ECF2F8;
+    padding: 7.1rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.card {
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    border-radius: 8px;
+}
+
+.author img {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: 2px solid #A775F1;
+}
+
+.author .name {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.author .graduate {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.jeanette>.author>div>.name,
+.jeanette>.author>div>.graduate,
+.kira>.author>div>.name,
+.kira>.author>div>.graduate {
+    color: #48556A !important;
+}
+
+.author {
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+}
+
+
+/* typography */
+
+.daniel>.info {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.daniel>.cite {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #CFCFCF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.jonathan>.info {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.jonathan>.cite {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.jeanette>.info {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #48556A;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.jeanette>.cite {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #48556A;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.patrick>.info {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ECF2F8;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.patrick>.cite {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.kira>.info {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #48556A;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.kira>.cite {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #48556A;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+
+/* card sizes */
+
+.daniel {
+    position: relative;
+    width: 32.7rem;
+    height: 44.4rem;
+    background: #733FC8;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+.daniel>.quotes {
+    width: 10.4rem;
+    height: 10.2rem;
+    background-image: url(./testimonials/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 61%;
+}
+
+.jonathan {
+    width: 32.7rem;
+    height: 24rem;
+    background: #48556A;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+.jeanette {
+    width: 32.7rem;
+    height: 22.2rem;
+    background: #FFFFFF;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+.patrick {
+    width: 32.7rem;
+    height: 38.4rem;
+    background: #19202D;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+.kira {
+    width: 32.7rem;
+    height: 43.8rem;
+    background: #FFFFFF;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+
+/* Responsive for desktop version */
+
+@media screen and (min-width:1440px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 3rem;
+    }
+    .daniel {
+        width: 54rem;
+        height: 28.2rem;
+        grid-column: 1/3;
+    }
+    .jonathan {
+        width: 25.5rem;
+        height: 28.2rem;
+    }
+    .jeanette {
+        width: 25.5rem;
+        height: 26.6rem;
+    }
+    .patrick {
+        grid-column: 2/4;
+        width: 54rem;
+        height: 26.6rem;
+    }
+    .kira {
+        grid-column: 4/4;
+        grid-row: 1/3;
+        width: 25.5rem;
+        height: 57.2rem;
+    }
+    .daniel>.info {
+        margin-bottom: 1.6rem;
+    }
+    .daniel>.quotes {
+        left: 65%;
+    }
+}
